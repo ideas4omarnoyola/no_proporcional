@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 24</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<style>
+    .hover:hover{
+        filter: saturate(300%);
+    }
+</style>
+<body class="pagina">
+    <img class="elementos" id="fondo" src="../img/pagina24/fondo.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="instrucciones" src="../img/pagina24/instrucciones.png" data-posX="24.941" data-posY="171.734"/>
+    <img class="elementos hover" id="btn01" src="../img/pagina24/btn01.png" data-posX="42.662" data-posY="231.95"/>
+    <img class="elementos hover" id="btn02" src="../img/pagina24/btn02.png" data-posX="42.662" data-posY="292.17"/>
+    <img class="elementos hover" id="btn03" src="../img/pagina24/btn03.png" data-posX="42.662" data-posY="365.38"/>
+    <img class="elementos" id="info01" src="../img/pagina24/info01.png" data-posX="355.119" data-posY="245.863"/>
+    <img class="elementos" id="info02" src="../img/pagina24/info02.png" data-posX="355.119" data-posY="245.863"/>
+    <img class="elementos" id="info03" src="../img/pagina24/info03.png" data-posX="355.119" data-posY="245.863"/>
+    <img class="elementos" id="btnEjemplo01" src="../img/pagina24/btnEjemplo01.png" data-posX="831.662" data-posY="399"/>
+    <img class="elementos" id="btnEjemplo02" src="../img/pagina24/btnEjemplo02.png" data-posX="831.662" data-posY="399"/>
+    <img class="elementos" id="infoEjemplo01" src="../img/pagina24/infoEjemplo01.png" data-posX="331.85" data-posY="160"/>
+    <img class="elementos" id="infoEjemplo02" src="../img/pagina24/infoEjemplo02.png" data-posX="331.85" data-posY="160"/>
+    
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+
+        const fondo = $('#fondo');
+        const instrucciones = $('#instrucciones');
+        const btn01 = $('#btn01');
+        const btn02 = $('#btn02');
+        const btn03 = $('#btn03');
+        const info01 = $('#info01');
+        const info02 = $('#info02');
+        const info03 = $('#info03');
+        const btnEjemplo01 = $('#btnEjemplo01');
+        const btnEjemplo02 = $('#btnEjemplo02');
+        const infoEjemplo02 = $('#infoEjemplo02');
+        const infoEjemplo01 = $('#infoEjemplo01');
+
+        let observandoBtn01 = false;
+        let observandoBtn02 = false;
+        let observandoBtn03 = false;
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/P24_1.mp3'),
+            new Audio('../audios/P24_2.mp3'),
+            new Audio('../audios/P24_3.mp3'),
+            new Audio('../audios/P24_4.mp3'),
+            new Audio('../audios/P24_5.mp3'),
+            new Audio('../audios/P24_6.mp3'),
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], terminaAudio, 1);
+            animacionEntrada(fondo, 'default', 1, 1);
+            animacionEntrada(instrucciones, 'default', 1, 5.5);
+            animacionEntrada(btn01, 'arriba-abajo', 1, 4);
+            animacionEntrada(btn02, 'arriba-abajo', 1, 4.5);
+            animacionEntrada(btn03, 'arriba-abajo', 1, 5);
+        }
+
+        function terminaAudio(){
+            parpadear(btn01)
+        }
+
+        btn01.click(function () {
+            if (btn01.css('cursor') == 'pointer' && !observandoBtn02 && !observandoBtn03) {
+                TweenMax.killTweensOf(btn01);
+    
+                dejarParpadear(btn01);
+                aplicacion.reproducirAudio(audio[1], terminaAudioBtn01, 1);
+                animacionSalida(btnEjemplo01, 'default', 1, .5);
+                animacionSalida(btnEjemplo02, 'default', 1, .5);
+                animacionSalida(infoEjemplo01, 'default', 1, .5);
+                animacionSalida(infoEjemplo02, 'default', 1, .5);
+                animacionSalida(info02, 'default', 1, .5);
+                animacionSalida(info03, 'default', 1, .5);
+                animacionEntrada(info01, 'default', 1, 1);
+                observandoBtn01 = true;
+            }
+        });
+
+        function terminaAudioBtn01() {
+            parpadear(btnEjemplo01);
+        }
+
+        btnEjemplo01.click(function () {
+            if (btnEjemplo01.css('cursor') == 'pointer') {
+                TweenMax.killTweensOf(btnEjemplo01);
+    
+                dejarParpadear(btnEjemplo01);
+                aplicacion.reproducirAudio(audio[2], terminaEjemplo1, 1);
+                animacionEntrada(infoEjemplo01, 'default', 1, 1);
+            }
+        });
+
+        function terminaEjemplo1(){
+            btn01.css({
+                'opacity': '1',
+                'cursor' : 'pointer'
+            });
+            observandoBtn01 = false;
+            parpadear(btn02);
+        }
+
+        btn02.click(function () {
+            if (btn02.css('cursor') == 'pointer' && !observandoBtn01 && !observandoBtn03) {
+                TweenMax.killTweensOf(btn02);
+                btn02.css({
+                    'opacity': '1',
+                });
+                dejarParpadear(btn02);
+                aplicacion.reproducirAudio(audio[3], terminaAudioBtn02, 1);
+                animacionSalida(btnEjemplo01, 'default', 1, .5);
+                animacionSalida(infoEjemplo01, 'default', 1, .5);
+                animacionSalida(info01, 'default', 1, .5);
+                animacionSalida(info03, 'default', 1, .5);
+                animacionEntrada(info02, 'default', 1, 1);
+                observandoBtn02 = true;
+            }
+        });
+
+        function terminaAudioBtn02() {
+            parpadear(btnEjemplo02);
+        }
+
+        btnEjemplo02.click(function () {
+            if (btnEjemplo02.css('cursor') == 'pointer') {
+                TweenMax.killTweensOf(btnEjemplo02);
+    
+                dejarParpadear(btnEjemplo02);
+                aplicacion.reproducirAudio(audio[4], terminaEjemplo2, 1);
+                animacionEntrada(infoEjemplo02, 'default', 1, 1);
+            }
+        });
+
+        function terminaEjemplo2(){
+            btn02.css({
+                'opacity': '1',
+                'cursor' : 'pointer'
+            });
+            observandoBtn02 = false;
+            parpadear(btn03);
+        }
+
+        btn03.click(function () {
+            if (btn03.css('cursor') == 'pointer' && !observandoBtn02 && !observandoBtn01) {
+                TweenMax.killTweensOf(btn03);
+                btn03.css({
+                    'opacity': '1',
+                });
+                dejarParpadear(btn03);
+                aplicacion.reproducirAudio(audio[5], terminaAudioBtn03, 1);
+                animacionSalida(btnEjemplo01, 'default', 1, .5);
+                animacionSalida(btnEjemplo02, 'default', 1, .5);
+                animacionSalida(infoEjemplo01, 'default', 1, .5);
+                animacionSalida(infoEjemplo02, 'default', 1, .5);
+                animacionSalida(info01, 'default', 1, .5);
+                animacionSalida(info02, 'default', 1, .5);
+                animacionEntrada(info03, 'default', 1, 1);
+                observandoBtn03 = true;
+            }
+        });
+
+        function terminaAudioBtn03() {
+            btn03.css({
+                'opacity': '1',
+                'cursor' : 'pointer'
+            });
+            observandoBtn03 = false;
+            terminaPagina();
+        }
+        
+        function terminaPagina(){
+            aplicacion.terminaPantalla();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 29</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+    <img class="elementos" id="fondo" src="../img/pagina29/fondo.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto1" src="../img/pagina29/texto1.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto2" src="../img/pagina29/texto2.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto3" src="../img/pagina29/texto3.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto4" src="../img/pagina29/texto4.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto5" src="../img/pagina29/texto5.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto6" src="../img/pagina29/texto6.png" data-posX="0" data-posY="0"/>
+    
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+
+        const fondo = $('#fondo');
+        const texto1 = $('#texto1');
+        const texto2 = $('#texto2');
+        const texto3 = $('#texto3');
+        const texto4 = $('#texto4');
+        const texto5 = $('#texto5');
+        const texto6 = $('#texto6');
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/P29_1.mp3')
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], terminaPagina, 1);
+            animacionEntrada(fondo, 'default', 1, 1);
+            animacionEntrada(texto1, 'default', 1, 4);
+            animacionEntrada(texto2, 'default', 1, 5.5);
+            animacionEntrada(texto3, 'default', 1, 7);
+            animacionEntrada(texto4, 'default', 1, 8.5);
+            animacionEntrada(texto5, 'default', 1, 9.5);
+            animacionEntrada(texto6, 'default', 1, 10.5);
+        }
+        
+        function terminaPagina(){
+            aplicacion.terminaPantalla();
+        }
+
+    </script>
+</body>
+</html>
