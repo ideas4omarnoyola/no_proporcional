@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 13</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+
+    <img class="elementos" id="titulo" src="../img/pagina13/titulo.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="imagen" src="../img/pagina13/imagen.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto" src="../img/pagina13/texto.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="botonIniciar" src="../img/pagina13/btnIniciar.png" data-posX="790" data-posY="430"/>
+
+    <!-- Pregunta -->
+    <img class="elementos" id="p1" src="../img/pagina13/p1.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="paloma" src="../img/pagina13/paloma.png" data-posX="370" data-posY="420"/>
+    <img class="elementos" id="tache1" src="../img/pagina13/tache.png" data-posX="370" data-posY="340"/>
+    <img class="elementos" id="tache2" src="../img/pagina13/tache.png" data-posX="370" data-posY="380"/>
+
+    <div class="elementos areas" id="area1" data-posX="120" data-posY="340"></div>
+    <div class="elementos areas" id="area2" data-posX="120" data-posY="380"></div>
+    <div class="elementos areas" id="area3" data-posX="120" data-posY="430"></div>
+
+    <!-- Retroalimentación -->
+    <img class="elementos" id="retroB" src="../img/pagina13/retroBuena.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="retroM" src="../img/pagina13/retroMala.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="botonReintentar" src="../img/pagina13/btnReintentar.png" data-posX="580" data-posY="420"/>
+    
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+        const titulo = $('#titulo');
+        const imagen = $('#imagen');
+        const texto = $('#texto');
+        const botonIniciar = $('#botonIniciar');
+        const p1 = $('#p1');
+        const area1 = $('#area1');
+        const area2 = $('#area2');
+        const area3 = $('#area3');
+        const areas = $('.areas');
+        const paloma = $('#paloma');
+        const tache1 = $('#tache1');
+        const tache2 = $('#tache2');
+        const retroB = $('#retroB');
+        const retroM = $('#retroM');
+        const botonReintentar = $('#botonReintentar');   
+
+        let acierto = 0;
+
+        areas.css({
+            width: '240px', 
+            height: '44px',
+            background: 'transparent',
+            cursor: 'pointer'
+        });
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/P13_1.mp3'),
+            new Audio('../audios/P13_2.mp3'),
+            new Audio('../audios/P13_3.mp3'),
+            new Audio('../audios/bien.mp3'),
+            new Audio('../audios/mal.mp3'),
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.desactivarBotonAdelante();
+            aplicacion.desactivarBotonAtras();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], activarIniciar, 1);
+            animacionEntrada(texto, 'izquierda-derecha', 1, 1);
+            animacionEntrada(titulo, 'izquierda-derecha', 1, 1);
+            animacionEntrada(imagen, 'izquierda-derecha', 1, 1);
+        }
+
+        function activarIniciar(){
+            parpadear(botonIniciar);
+        }
+
+        botonIniciar.click(function(){
+            if(botonIniciar.css('cursor') == 'pointer'){
+                animacionSalida(texto, 'default', 1, 1);
+                animacionSalida(botonIniciar, 'default', 1);
+                pregunta1();
+            }
+        });
+
+        function pregunta1(){
+            animacionEntrada(p1, 'default', 1, 2);
+            animacionEntrada(area1, 'default', 1, 2);
+            animacionEntrada(area2, 'default', 1, 2);
+            animacionEntrada(area3, 'default', 1, 2);
+        }
+
+        area1.click(function(){
+            if(area1.css('cursor') == 'pointer'){
+                audio[4].play();
+                animacionEntrada(tache1, 'default', 1, 2);
+                salidaPregunta();
+            }
+        });
+
+        area2.click(function(){
+            if(area2.css('cursor') == 'pointer'){
+                audio[4].play();
+                animacionEntrada(tache2, 'default', 1, 2);
+                salidaPregunta();
+            }
+        });
+
+        area3.click(function(){
+            if(area3.css('cursor') == 'pointer'){
+                audio[3].play();
+                animacionEntrada(paloma, 'default', 1, 2);
+                acierto++;
+                salidaPregunta();
+            }
+        });
+
+        function salidaPregunta(){
+            animacionSalida(p1, 'default', 1, 1);
+            animacionSalida(area1, 'default', 1, 1);
+            animacionSalida(area2, 'default', 1, 1);
+            animacionSalida(area3, 'default', 1, 1);
+            animacionSalida(paloma, 'default', 1, 1);
+            animacionSalida(tache1, 'default', 1, 1);
+            animacionSalida(tache2, 'default', 1, 1);
+
+            retroalimentacion();
+        }
+
+        function retroalimentacion(){
+            if(acierto == 1){
+                aplicacion.reproducirAudio(audio[1], activarBoton, 2);
+                animacionEntrada(retroB, 'default', 1, 2);
+            }
+            else{
+                aplicacion.reproducirAudio(audio[2], parpadeaReintentar, 2);
+                animacionEntrada(retroM, 'default', 1, 2);
+            }
+        }
+
+        function parpadeaReintentar(){
+            parpadear(botonReintentar);
+        }
+
+        botonReintentar.click(function(){
+            if(botonReintentar.css('cursor') == 'pointer'){
+                aplicacion.recargarPagina();
+            }
+        });
+
+        function activarBoton(){
+            aplicacion.terminaPantalla();
+        }
+
+    </script>
+</body>
+</html>

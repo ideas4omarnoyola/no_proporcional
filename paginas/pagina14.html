@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 14</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+
+    <img class="elementos" id="titulo" src="../img/pagina14/titulo.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="imagen" src="../img/pagina14/imagen.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto1" src="../img/pagina14/texto1.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto2" src="../img/pagina14/texto2.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto3" src="../img/pagina14/texto3.png" data-posX="0" data-posY="0"/>
+
+    
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+        const titulo = $('#titulo');
+        const imagen = $('#imagen');
+        const texto1 = $('#texto1');
+        const texto2 = $('#texto2');
+        const texto3 = $('#texto3');
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/P14_1.mp3')
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], activarBoton, 2);
+            animacionEntrada(titulo, 'izquierda-derecha', 1, 1);
+            animacionEntrada(imagen, 'izquierda-derecha', 1, 1);
+            animacionEntrada(texto1, 'derecha-izquierda', 1, 1);
+            animacionEntrada(texto2, 'derecha-izquierda', 1, 1.5);
+            animacionEntrada(texto3, 'derecha-izquierda', 1, 2);
+        }
+
+        function activarBoton(){
+            aplicacion.terminaPantalla();
+        }
+
+    </script>
+</body>
+</html>

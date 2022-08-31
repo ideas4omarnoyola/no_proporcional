@@ -9,6 +9,9 @@ let paginasVistas = 0;
 let calificacionFinal = 0;
 let intentos = 1;
 
+// Actividad 1 No Proporcional----------------------------------------------
+let puntosAct1 = 0;
+
 // Iniciar App
 function iniciarAplicacion(){
     totalPaginas = paginas.length;
@@ -218,7 +221,7 @@ function compararCalificaciones(calificacion){
     asignarCalificacion(calificacionFinal);
 }
 
-// Intentos del curso
+// Intentos del curso ----------------------------------------------------
 function siguienteIntento(){
     intentos++;
 }
@@ -228,6 +231,15 @@ function verIntento(){
     return intentos;
 }
 
-function reiniciarInntentos(){
+function reiniciarIntentos(){
     intentos = 1;
+}
+
+// Puntos No proporcional-------------------------------------------------
+function guardarPuntos(puntos){
+    puntosAct1 = puntos; 
+}
+
+function totalPuntos(){
+    return puntosAct1;
 }
