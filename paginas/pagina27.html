@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 27</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+
+    <img class="elementos" id="titulo" src="../img/pagina27/titulo.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="imagen" src="../img/pagina27/imagen.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto" src="../img/pagina27/texto.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="btnIniciar" src="../img/pagina27/btnIniciar.png" data-posX="790" data-posY="430"/>
+
+    <!-- Evaluación -->
+    <img class="elementos" id="fondoEvaluacion" src="../img/pagina27/fondoEvaluacion.png" data-posX="0" data-posY="0"/>
+
+    <!-- Comodines -->
+    <img class="elementos" id="contComodin" src="../img/pagina27/cont-comodin.png" data-posX="18" data-posY="256"/>
+    <img class="elementos comodines" id="comodin1" src="../img/pagina27/comodin_1.png" data-posX="27" data-posY="266"/>
+    <img class="elementos comodines" id="comodin2" src="../img/pagina27/comodin_2.png" data-posX="27" data-posY="317"/>
+    <img class="elementos comodines" id="comodin3" src="../img/pagina27/comodin_3.png" data-posX="27" data-posY="368"/>
+    <img class="elementos comodines" id="comodin4" src="../img/pagina27/comodin_4.png" data-posX="27" data-posY="420"/>
+
+    <!-- Cajas -->
+    <img class="elementos areas" id="area1" src="../img/pagina27/area.png" data-posX="378" data-posY="209"/>
+    <img class="elementos areas" id="area2" src="../img/pagina27/area.png" data-posX="580" data-posY="209"/>
+    <img class="elementos areas" id="area3" src="../img/pagina27/area.png" data-posX="479" data-posY="254"/>
+    <img class="elementos areas" id="area4" src="../img/pagina27/area.png" data-posX="580" data-posY="254"/>
+    <img class="elementos areas" id="area5" src="../img/pagina27/area.png" data-posX="681" data-posY="254"/>
+    <img class="elementos areas" id="area6" src="../img/pagina27/area.png" data-posX="378" data-posY="276"/>
+    <img class="elementos areas" id="area7" src="../img/pagina27/area.png" data-posX="479" data-posY="276"/>
+    <img class="elementos areas" id="area8" src="../img/pagina27/area.png" data-posX="681" data-posY="276"/>
+    <img class="elementos areas" id="area9" src="../img/pagina27/area.png" data-posX="784" data-posY="276"/>
+    <img class="elementos areas" id="area10" src="../img/pagina27/area.png" data-posX="378" data-posY="298"/>
+    <img class="elementos areas" id="area11" src="../img/pagina27/area.png" data-posX="479" data-posY="298"/>
+    <img class="elementos areas" id="area12" src="../img/pagina27/area.png" data-posX="580" data-posY="298"/>
+    <img class="elementos areas" id="area13" src="../img/pagina27/area.png" data-posX="784" data-posY="298"/>
+    <img class="elementos areas" id="area14" src="../img/pagina27/area.png" data-posX="378" data-posY="320"/>
+    <img class="elementos areas" id="area15" src="../img/pagina27/area.png" data-posX="580" data-posY="320"/>
+    <img class="elementos areas" id="area16" src="../img/pagina27/area.png" data-posX="681" data-posY="320"/>
+    <img class="elementos areas" id="area17" src="../img/pagina27/area.png" data-posX="784" data-posY="320"/>
+    <img class="elementos areas" id="area18" src="../img/pagina27/area.png" data-posX="479" data-posY="344"/>
+    <img class="elementos areas" id="area19" src="../img/pagina27/area.png" data-posX="580" data-posY="344"/>
+    <img class="elementos areas" id="area20" src="../img/pagina27/area.png" data-posX="681" data-posY="344"/>
+    <img class="elementos areas" id="area21" src="../img/pagina27/area.png" data-posX="784" data-posY="344"/>
+    <img class="elementos areas" id="area22" src="../img/pagina27/area.png" data-posX="378" data-posY="367"/>
+    <img class="elementos areas" id="area23" src="../img/pagina27/area2.png" data-posX="378" data-posY="459"/>
+
+    <!-- Globos -->
+    <img class="elementos" id="p1" src="../img/pagina27/p1.png" data-posX="300" data-posY="100"/>
+    <div id="g1_1" class="elementos seleccionables" data-posX="300" data-posY="110"></div>
+    <div id="g1_2" class="elementos seleccionables" data-posX="300" data-posY="130"></div>
+    <div id="g1_3" class="elementos seleccionables" data-posX="300" data-posY="160"></div>
+    <img id="c1_1" class="elementos" data-posY="100" data-posX="450" src="../img/pagina27/paloma.png" />
+    <img id="c1_2" class="elementos" data-posY="120" data-posX="450" src="../img/pagina27/tache.png" />
+    <img id="c1_3" class="elementos" data-posY="150" data-posX="450" src="../img/pagina27/tache.png" />
+    <div id="r1" class="elementos respuesta" data-posX="396" data-posY="210">80,000</div>
+
+    <img class="elementos" id="p2" src="../img/pagina27/p2.png" data-posX="500" data-posY="100"/>
+    <div id="g2_1" class="elementos seleccionables" data-posX="500" data-posY="110"></div>
+    <div id="g2_2" class="elementos seleccionables" data-posX="500" data-posY="130"></div>
+    <div id="g2_3" class="elementos seleccionables" data-posX="500" data-posY="150"></div>
+    <img id="c2_1" class="elementos" data-posY="100" data-posX="650" src="../img/pagina27/tache.png" />
+    <img id="c2_2" class="elementos" data-posY="120" data-posX="650" src="../img/pagina27/paloma.png" />
+    <img id="c2_3" class="elementos" data-posY="150" data-posX="650" src="../img/pagina27/tache.png" />
+    <div id="r2" class="elementos respuesta" data-posY="210" data-posX="598">250,000</div>
+
+
+    <img class="elementos" id="p3" src="../img/pagina27/p3.png" data-posX="400" data-posY="150"/>
+    <div id="g3_1" class="elementos seleccionables" data-posX="400" data-posY="160"></div>
+    <div id="g3_2" class="elementos seleccionables" data-posX="400" data-posY="180"></div>
+    <div id="g3_3" class="elementos seleccionables" data-posX="400" data-posY="200"></div> 
+    <img id="c3_1" class="elementos" data-posY="160" data-posX="550" src="../img/pagina27/paloma.png" />
+    <img id="c3_2" class="elementos" data-posY="180" data-posX="550" src="../img/pagina27/tache.png" />
+    <img id="c3_3" class="elementos" data-posY="200" data-posX="550" src="../img/pagina27/tache.png" />
+    <div id="r3" class="elementos respuesta" data-posY="255" data-posX="500">19,882</div>
+
+    <img class="elementos" id="p4" src="../img/pagina27/p4.png" data-posX="500" data-posY="150"/>
+    <div id="g4_1" class="elementos seleccionables" data-posX="500" data-posY="160"></div>
+    <div id="g4_2" class="elementos seleccionables" data-posX="500" data-posY="180"></div>
+    <div id="g4_3" class="elementos seleccionables" data-posX="500" data-posY="200"></div>  
+    <img id="c4_1" class="elementos" data-posY="150" data-posX="650" src="../img/pagina27/tache.png" />
+    <img id="c4_2" class="elementos" data-posY="170" data-posX="650" src="../img/pagina27/paloma.png" />
+    <img id="c4_3" class="elementos" data-posY="190" data-posX="650" src="../img/pagina27/tache.png" />
+    <div id="r4" class="elementos respuesta" data-posY="255" data-posX="610">5,825</div>
+
+    <img class="elementos" id="p5" src="../img/pagina27/p5.png" data-posX="630" data-posY="150"/>
+    <div id="g5_1" class="elementos seleccionables" data-posX="630" data-posY="160"></div>
+    <div id="g5_2" class="elementos seleccionables" data-posX="630" data-posY="180"></div>
+    <div id="g5_3" class="elementos seleccionables" data-posX="630" data-posY="200"></div>  
+    <img id="c5_1" class="elementos" data-posY="150" data-posX="750" src="../img/pagina27/tache.png" />
+    <img id="c5_2" class="elementos" data-posY="170" data-posX="750" src="../img/pagina27/tache.png" />
+    <img id="c5_3" class="elementos" data-posY="190" data-posX="750" src="../img/pagina27/paloma.png" />
+    <div id="r5" class="elementos respuesta" data-posY="255" data-posX="700">5,405</div>
+
+    <img class="elementos" id="p6" src="../img/pagina27/p6.png" data-posX="290" data-posY="170"/>
+    <div id="g6_1" class="elementos seleccionables" data-posX="290" data-posY="180"></div>
+    <div id="g6_2" class="elementos seleccionables" data-posX="290" data-posY="200"></div>
+    <div id="g6_3" class="elementos seleccionables" data-posX="290" data-posY="220"></div>
+    <img id="c6_1" class="elementos" data-posY="180" data-posX="400" src="../img/pagina27/tache.png" />
+    <img id="c6_2" class="elementos" data-posY="200" data-posX="400" src="../img/pagina27/paloma.png" />
+    <img id="c6_3" class="elementos" data-posY="220" data-posX="400" src="../img/pagina27/tache.png" />
+    <div id="r6" class="elementos respuesta" data-posY="276" data-posX="400">43.75</div>
+
+    <img class="elementos" id="p7" src="../img/pagina27/p7.png" data-posX="400" data-posY="170"/>
+    <div id="g7_1" class="elementos seleccionables" data-posX="450" data-posY="180"></div>
+    <div id="g7_2" class="elementos seleccionables" data-posX="450" data-posY="200"></div>
+    <div id="g7_3" class="elementos seleccionables" data-posX="450" data-posY="220"></div>
+    <img id="c7_1" class="elementos" data-posY="170" data-posX="580" src="../img/pagina27/paloma.png" />
+    <img id="c7_2" class="elementos" data-posY="190" data-posX="580" src="../img/pagina27/tache.png" />
+    <img id="c7_3" class="elementos" data-posY="210" data-posX="580" src="../img/pagina27/tache.png" />
+    <div id="r7" class="elementos respuesta" data-posY="276" data-posX="500">13.25</div>
+
+    <img class="elementos" id="p8" src="../img/pagina27/p8.png" data-posX="610" data-posY="170"/>
+    <div id="g8_1" class="elementos seleccionables" data-posX="610" data-posY="180"></div>
+    <div id="g8_2" class="elementos seleccionables" data-posX="610" data-posY="200"></div>
+    <div id="g8_3" class="elementos seleccionables" data-posX="610" data-posY="220"></div>
+    <img id="c8_1" class="elementos" data-posY="170" data-posX="720" src="../img/pagina27/tache.png" />
+    <img id="c8_2" class="elementos" data-posY="190" data-posX="720" src="../img/pagina27/tache.png" />
+    <img id="c8_3" class="elementos" data-posY="210" data-posX="720" src="../img/pagina27/paloma.png" />
+    <div id="r8" class="elementos respuesta" data-posY="276" data-posX="715">2.70</div>
+
+    <img class="elementos" id="p9" src="../img/pagina27/p9.png" data-posX="720" data-posY="170"/>
+    <div id="g9_1" class="elementos seleccionables" data-posX="720" data-posY="180"></div>
+    <div id="g9_2" class="elementos seleccionables" data-posX="720" data-posY="200"></div>
+    <div id="g9_3" class="elementos seleccionables" data-posX="720" data-posY="220"></div>
+    <img id="c9_1" class="elementos" data-posY="170" data-posX="860" src="../img/pagina27/tache.png" />
+    <img id="c9_2" class="elementos" data-posY="190" data-posX="860" src="../img/pagina27/tache.png" />
+    <img id="c9_3" class="elementos" data-posY="210" data-posX="860" src="../img/pagina27/paloma.png" />
+    <div id="r9" class="elementos respuesta" data-posY="276" data-posX="820">9.72</div>
+
+    <img class="elementos" id="p10" src="../img/pagina27/p10.png" data-posX="290" data-posY="200"/>
+    <div id="g10_1" class="elementos seleccionables" data-posX="290" data-posY="210"></div>
+    <div id="g10_2" class="elementos seleccionables" data-posX="290" data-posY="230"></div>
+    <div id="g10_3" class="elementos seleccionables" data-posX="290" data-posY="250"></div>
+    <img id="c10_1" class="elementos" data-posY="200" data-posX="400" src="../img/pagina27/tache.png" />
+    <img id="c10_2" class="elementos" data-posY="220" data-posX="400" src="../img/pagina27/paloma.png" />
+    <img id="c10_3" class="elementos" data-posY="240" data-posX="400" src="../img/pagina27/tache.png" />
+    <div id="r10" class="elementos respuesta" data-posY="298" data-posX="405">2.28</div>
+
+    <img class="elementos" id="p11" src="../img/pagina27/p11.png" data-posX="430" data-posY="200"/>
+    <div id="g11_1" class="elementos seleccionables" data-posX="430" data-posY="210"></div>
+    <div id="g11_2" class="elementos seleccionables" data-posX="430" data-posY="230"></div>
+    <div id="g11_3" class="elementos seleccionables" data-posX="430" data-posY="250"></div>
+    <img id="c11_1" class="elementos" data-posY="200" data-posX="540" src="../img/pagina27/paloma.png" />
+    <img id="c11_2" class="elementos" data-posY="220" data-posX="540" src="../img/pagina27/tache.png" />
+    <img id="c11_3" class="elementos" data-posY="240" data-posX="540" src="../img/pagina27/tache.png" />
+    <div id="r11" class="elementos respuesta" data-posY="297" data-posX="505">7.54</div>
+
+    <img class="elementos" id="p12" src="../img/pagina27/p12.png" data-posX="500" data-posY="200"/>
+    <div id="g12_1" class="elementos seleccionables" data-posX="500" data-posY="210"></div>
+    <div id="g12_2" class="elementos seleccionables" data-posX="500" data-posY="230"></div>
+    <div id="g12_3" class="elementos seleccionables" data-posX="500" data-posY="250"></div>
+    <img id="c12_1" class="elementos" data-posY="200" data-posX="640" src="../img/pagina27/tache.png" />
+    <img id="c12_2" class="elementos" data-posY="220" data-posX="640" src="../img/pagina27/tache.png" />
+    <img id="c12_3" class="elementos" data-posY="240" data-posX="640" src="../img/pagina27/paloma.png" />
+    <div id="r12" class="elementos respuesta" data-posY="298" data-posX="600">42.91</div>
+
+    <img class="elementos" id="p13" src="../img/pagina27/p13.png" data-posX="700" data-posY="200"/>
+    <div id="g13_1" class="elementos seleccionables" data-posX="700" data-posY="210"></div>
+    <div id="g13_2" class="elementos seleccionables" data-posX="700" data-posY="230"></div>
+    <div id="g13_3" class="elementos seleccionables" data-posX="700" data-posY="250"></div>
+    <img id="c13_1" class="elementos" data-posY="200" data-posX="850" src="../img/pagina27/tache.png" />
+    <img id="c13_2" class="elementos" data-posY="220" data-posX="850" src="../img/pagina27/paloma.png" />
+    <img id="c13_3" class="elementos" data-posY="240" data-posX="850" src="../img/pagina27/tache.png" />
+    <div id="r13" class="elementos respuesta" data-posY="298" data-posX="810">10.28</div>
+
+    <img class="elementos" id="p14" src="../img/pagina27/p14.png" data-posX="290" data-posY="220"/>
+    <div id="g14_1" class="elementos seleccionables" data-posX="290" data-posY="230"></div>
+    <div id="g14_2" class="elementos seleccionables" data-posX="290" data-posY="250"></div>
+    <div id="g14_3" class="elementos seleccionables" data-posX="290" data-posY="270"></div>
+    <img id="c14_1" class="elementos" data-posY="220" data-posX="400" src="../img/pagina27/tache.png" />
+    <img id="c14_2" class="elementos" data-posY="240" data-posX="400" src="../img/pagina27/tache.png" />
+    <img id="c14_3" class="elementos" data-posY="260" data-posX="400" src="../img/pagina27/paloma.png" />
+    <div id="r14" class="elementos respuesta" data-posY="321" data-posX="400">31,500</div>
+
+    <img class="elementos" id="p15" src="../img/pagina27/p15.png" data-posX="490" data-posY="220"/>
+    <div id="g15_1" class="elementos seleccionables" data-posX="490" data-posY="230"></div>
+    <div id="g15_2" class="elementos seleccionables" data-posX="490" data-posY="255"></div>
+    <div id="g15_3" class="elementos seleccionables" data-posX="490" data-posY="275"></div>
+    <img id="c15_1" class="elementos" data-posY="220" data-posX="600" src="../img/pagina27/paloma.png" />
+    <img id="c15_2" class="elementos" data-posY="240" data-posX="600" src="../img/pagina27/tache.png" />
+    <img id="c15_3" class="elementos" data-posY="260" data-posX="600" src="../img/pagina27/tache.png" />
+    <div id="r15" class="elementos respuesta" data-posY="321" data-posX="610">5,242</div>
+
+    <img class="elementos" id="p16" src="../img/pagina27/p16.png" data-posX="588" data-posY="220"/>
+    <div id="g16_1" class="elementos seleccionables" data-posX="580" data-posY="230"></div>
+    <div id="g16_2" class="elementos seleccionables" data-posX="580" data-posY="250"></div>
+    <div id="g16_3" class="elementos seleccionables" data-posX="580" data-posY="270"></div>
+    <img id="c16_1" class="elementos" data-posY="220" data-posX="690" src="../img/pagina27/tache.png" />
+    <img id="c16_2" class="elementos" data-posY="240" data-posX="690" src="../img/pagina27/tache.png" />
+    <img id="c16_3" class="elementos" data-posY="260" data-posX="690" src="../img/pagina27/paloma.png" />
+    <div id="r16" class="elementos respuesta" data-posY="321" data-posX="710">4,865</div>
+
+    <img class="elementos" id="p17" src="../img/pagina27/p17.png" data-posX="700" data-posY="220"/>
+    <div id="g17_1" class="elementos seleccionables" data-posX="700" data-posY="230"></div>
+    <div id="g17_2" class="elementos seleccionables" data-posX="700" data-posY="250"></div>
+    <div id="g17_3" class="elementos seleccionables" data-posX="700" data-posY="270"></div>
+    <img id="c17_1" class="elementos" data-posY="220" data-posX="810" src="../img/pagina27/tache.png" />
+    <img id="c17_2" class="elementos" data-posY="240" data-posX="810" src="../img/pagina27/tache.png" />
+    <img id="c17_3" class="elementos" data-posY="260" data-posX="810" src="../img/pagina27/paloma.png" />
+    <div id="r17" class="elementos respuesta" data-posY="321" data-posX="810">59,501</div>
+
+    <img class="elementos" id="p18" src="../img/pagina27/p18.png" data-posX="440" data-posY="240"/>
+    <div id="g18_1" class="elementos seleccionables" data-posX="440" data-posY="250"></div>
+    <div id="g18_2" class="elementos seleccionables" data-posX="440" data-posY="270"></div>
+    <div id="g18_3" class="elementos seleccionables" data-posX="440" data-posY="290"></div>
+    <img id="c18_1" class="elementos" data-posY="240" data-posX="550" src="../img/pagina27/tache.png" />
+    <img id="c18_2" class="elementos" data-posY="260" data-posX="550" src="../img/pagina27/paloma.png" />
+    <img id="c18_3" class="elementos" data-posY="280" data-posX="550" src="../img/pagina27/tache.png" />
+    <div id="r18" class="elementos respuesta" data-posY="345" data-posX="510">1.47</div>
+
+    <img class="elementos" id="p19" src="../img/pagina27/p19.png" data-posX="490" data-posY="240"/>
+    <div id="g19_1" class="elementos seleccionables" data-posX="490" data-posY="250"></div>
+    <div id="g19_2" class="elementos seleccionables" data-posX="490" data-posY="270"></div>
+    <div id="g19_3" class="elementos seleccionables" data-posX="490" data-posY="290"></div>
+    <img id="c19_1" class="elementos" data-posY="240" data-posX="600" src="../img/pagina27/paloma.png" />
+    <img id="c19_2" class="elementos" data-posY="260" data-posX="600" src="../img/pagina27/tache.png" />
+    <img id="c19_3" class="elementos" data-posY="280" data-posX="600" src="../img/pagina27/tache.png" />
+    <div id="r19" class="elementos respuesta" data-posY="345" data-posX="610">.43</div>
+
+    <img class="elementos" id="p20" src="../img/pagina27/p20.png" data-posX="588" data-posY="240"/>
+    <div id="g20_1" class="elementos seleccionables" data-posX="588" data-posY="250"></div>
+    <div id="g20_2" class="elementos seleccionables" data-posX="588" data-posY="270"></div>
+    <div id="g20_3" class="elementos seleccionables" data-posX="588" data-posY="290"></div>
+    <img id="c20_1" class="elementos" data-posY="240" data-posX="700" src="../img/pagina27/tache.png" />
+    <img id="c20_2" class="elementos" data-posY="260" data-posX="700" src="../img/pagina27/tache.png" />
+    <img id="c20_3" class="elementos" data-posY="280" data-posX="700" src="../img/pagina27/paloma.png" />
+    <div id="r20" class="elementos respuesta" data-posY="345" data-posX="710">.40</div>
+
+    <img class="elementos" id="p21" src="../img/pagina27/p21.png" data-posX="700" data-posY="240"/>
+    <div id="g21_1" class="elementos seleccionables" data-posX="700" data-posY="250"></div>
+    <div id="g21_2" class="elementos seleccionables" data-posX="700" data-posY="270"></div>
+    <div id="g21_3" class="elementos seleccionables" data-posX="700" data-posY="290"></div>
+    <img id="c21_1" class="elementos" data-posY="240" data-posX="800" src="../img/pagina27/tache.png" />
+    <img id="c21_2" class="elementos" data-posY="260" data-posX="800" src="../img/pagina27/tache.png" />
+    <img id="c21_3" class="elementos" data-posY="280" data-posX="800" src="../img/pagina27/paloma.png" />
+    <div id="r21" class="elementos respuesta" data-posY="345" data-posX="810">4.89</div>
+
+    <img class="elementos" id="p22" src="../img/pagina27/p22.png" data-posX="350" data-posY="260"/>
+    <div id="g22_1" class="elementos seleccionables" data-posX="350" data-posY="270"></div>
+    <div id="g22_2" class="elementos seleccionables" data-posX="350" data-posY="290"></div>
+    <div id="g22_3" class="elementos seleccionables" data-posX="350" data-posY="310"></div>
+    <img id="c22_1" class="elementos" data-posY="260" data-posX="460" src="../img/pagina27/tache.png" />
+    <img id="c22_2" class="elementos" data-posY="280" data-posX="460" src="../img/pagina27/paloma.png" />
+    <img id="c22_3" class="elementos" data-posY="300" data-posX="460" src="../img/pagina27/tache.png" />
+    <div id="r22" class="elementos respuesta" data-posY="370" data-posX="400">2.59</div>
+
+    <img class="elementos" id="p23" src="../img/pagina27/p23.png" data-posX="350" data-posY="360"/>
+    <div id="g23_1" class="elementos seleccionables" data-posX="350" data-posY="370"></div>
+    <div id="g23_2" class="elementos seleccionables" data-posX="350" data-posY="390"></div>
+    <div id="g23_3" class="elementos seleccionables" data-posX="350" data-posY="410"></div>
+    <img id="c23_1" class="elementos" data-posY="360" data-posX="460" src="../img/pagina27/paloma.png" />
+    <img id="c23_2" class="elementos" data-posY="380" data-posX="460" src="../img/pagina27/tache.png" />
+    <img id="c23_3" class="elementos" data-posY="400" data-posX="460" src="../img/pagina27/tache.png" />
+    <div id="r23" class="elementos respuesta" data-posY="466" data-posX="400">39.65</div>
+
+    <!-- Retroalimentacion -->
+    <img class="elementos" id="retroBuena" src="../img/pagina27/retroBuena.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="retroMala" src="../img/pagina27/retroMala.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="btnReintentar" src="../img/pagina27/btnReintentar.png" data-posX="790" data-posY="430"/>
+    <div class="elementos" id="calificacionParcial"></div>
+    
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+        const titulo = $('#titulo');
+        const imagen = $('#imagen');
+        const texto = $('#texto');
+        const btnIniciar = $('#btnIniciar');
+        
+        const fondoEvaluacion = $('#fondoEvaluacion');
+        const contComodin = $('#contComodin');
+        const comodin1 = $('#comodin1');
+        const comodin2 = $('#comodin2');
+        const comodin3 = $('#comodin3');
+        const comodin4 = $('#comodin4');
+        const area1 = $('#area1');
+        const area2 = $('#area2');
+        const area3 = $('#area3');
+        const area4 = $('#area4');
+        const area5 = $('#area5');
+        const area6 = $('#area6');
+        const area7 = $('#area7');
+        const area8 = $('#area8');
+        const area9 = $('#area9');
+        const area10 = $('#area10');
+        const area11 = $('#area11');
+        const area12 = $('#area12');
+        const area13 = $('#area13');
+        const area14 = $('#area14');
+        const area15 = $('#area15');
+        const area16 = $('#area16');
+        const area17 = $('#area17');
+        const area18 = $('#area18');
+        const area19 = $('#area19');
+        const area20 = $('#area20');
+        const area21 = $('#area21');
+        const area22 = $('#area22');
+        const area23 = $('#area23');
+
+        const p1 = $('#p1')
+        const g1_1 = $('#g1_1');
+        const g1_2 = $('#g1_2');
+        const g1_3 = $('#g1_3');
+        const r1 = $('#r1');
+        const c1_1 = $('#c1_1');
+        const c1_2 = $('#c1_2');
+        const c1_3 = $('#c1_3');
+
+        const p2 = $('#p2')
+        const g2_1 = $('#g2_1');
+        const g2_2 = $('#g2_2');
+        const g2_3 = $('#g2_3');
+        const r2 = $('#r2');
+        const c2_1 = $('#c2_1');
+        const c2_2 = $('#c2_2');
+        const c2_3 = $('#c2_3');
+
+        const p3 = $('#p3')
+        const g3_1 = $('#g3_1');
+        const g3_2 = $('#g3_2');
+        const g3_3 = $('#g3_3');
+        const r3 = $('#r3');
+        const c3_1 = $('#c3_1');
+        const c3_2 = $('#c3_2');
+        const c3_3 = $('#c3_3');
+
+        const p4 = $('#p4')
+        const g4_1 = $('#g4_1');
+        const g4_2 = $('#g4_2');
+        const g4_3 = $('#g4_3');
+        const r4 = $('#r4');
+        const c4_1 = $('#c4_1');
+        const c4_2 = $('#c4_2');
+        const c4_3 = $('#c4_3');
+
+        const p5 = $('#p5')
+        const g5_1 = $('#g5_1');
+        const g5_2 = $('#g5_2');
+        const g5_3 = $('#g5_3');
+        const r5 = $('#r5');
+        const c5_1 = $('#c5_1');
+        const c5_2 = $('#c5_2');
+        const c5_3 = $('#c5_3');
+
+        const p6 = $('#p6')
+        const g6_1 = $('#g6_1');
+        const g6_2 = $('#g6_2');
+        const g6_3 = $('#g6_3');
+        const r6 = $('#r6');
+        const c6_1 = $('#c6_1');
+        const c6_2 = $('#c6_2');
+        const c6_3 = $('#c6_3');
+
+        const p7 = $('#p7')
+        const g7_1 = $('#g7_1');
+        const g7_2 = $('#g7_2');
+        const g7_3 = $('#g7_3');
+        const r7 = $('#r7');
+        const c7_1 = $('#c7_1');
+        const c7_2 = $('#c7_2');
+        const c7_3 = $('#c7_3');
+
+        const p8 = $('#p8')
+        const g8_1 = $('#g8_1');
+        const g8_2 = $('#g8_2');
+        const g8_3 = $('#g8_3');
+        const r8 = $('#r8');
+        const c8_1 = $('#c8_1');
+        const c8_2 = $('#c8_2');
+        const c8_3 = $('#c8_3');
+
+        const p9 = $('#p9')
+        const g9_1 = $('#g9_1');
+        const g9_2 = $('#g9_2');
+        const g9_3 = $('#g9_3');
+        const r9 = $('#r9');
+        const c9_1 = $('#c9_1');
+        const c9_2 = $('#c9_2');
+        const c9_3 = $('#c9_3');
+
+        const p10 = $('#p10')
+        const g10_1 = $('#g10_1');
+        const g10_2 = $('#g10_2');
+        const g10_3 = $('#g10_3');
+        const r10 = $('#r10');
+        const c10_1 = $('#c10_1');
+        const c10_2 = $('#c10_2');
+        const c10_3 = $('#c10_3');
+
+        const p11 = $('#p11')
+        const g11_1 = $('#g11_1');
+        const g11_2 = $('#g11_2');
+        const g11_3 = $('#g11_3');
+        const r11 = $('#r11');
+        const c11_1 = $('#c11_1');
+        const c11_2 = $('#c11_2');
+        const c11_3 = $('#c11_3');
+
+        const p12 = $('#p12')
+        const g12_1 = $('#g12_1');
+        const g12_2 = $('#g12_2');
+        const g12_3 = $('#g12_3');
+        const r12 = $('#r12');
+        const c12_1 = $('#c12_1');
+        const c12_2 = $('#c12_2');
+        const c12_3 = $('#c12_3');
+
+        const p13 = $('#p13')
+        const g13_1 = $('#g13_1');
+        const g13_2 = $('#g13_2');
+        const g13_3 = $('#g13_3');
+        const r13 = $('#r13');
+        const c13_1 = $('#c13_1');
+        const c13_2 = $('#c13_2');
+        const c13_3 = $('#c13_3');
+
+        const p14 = $('#p14')
+        const g14_1 = $('#g14_1');
+        const g14_2 = $('#g14_2');
+        const g14_3 = $('#g14_3');
+        const r14 = $('#r14');
+        const c14_1 = $('#c14_1');
+        const c14_2 = $('#c14_2');
+        const c14_3 = $('#c14_3');
+
+        const p15 = $('#p15')
+        const g15_1 = $('#g15_1');
+        const g15_2 = $('#g15_2');
+        const g15_3 = $('#g15_3');
+        const r15 = $('#r15');
+        const c15_1 = $('#c15_1');
+        const c15_2 = $('#c15_2');
+        const c15_3 = $('#c15_3');
+
+        const p16 = $('#p16')
+        const g16_1 = $('#g16_1');
+        const g16_2 = $('#g16_2');
+        const g16_3 = $('#g16_3');
+        const r16 = $('#r16');
+        const c16_1 = $('#c16_1');
+        const c16_2 = $('#c16_2');
+        const c16_3 = $('#c16_3');
+
+        const p17 = $('#p17')
+        const g17_1 = $('#g17_1');
+        const g17_2 = $('#g17_2');
+        const g17_3 = $('#g17_3');
+        const r17 = $('#r17');
+        const c17_1 = $('#c17_1');
+        const c17_2 = $('#c17_2');
+        const c17_3 = $('#c17_3');
+
+        const p18 = $('#p18')
+        const g18_1 = $('#g18_1');
+        const g18_2 = $('#g18_2');
+        const g18_3 = $('#g18_3');
+        const r18 = $('#r18');
+        const c18_1 = $('#c18_1');
+        const c18_2 = $('#c18_2');
+        const c18_3 = $('#c18_3');
+
+        const p19 = $('#p19')
+        const g19_1 = $('#g19_1');
+        const g19_2 = $('#g19_2');
+        const g19_3 = $('#g19_3');
+        const r19 = $('#r19');
+        const c19_1 = $('#c19_1');
+        const c19_2 = $('#c19_2');
+        const c19_3 = $('#c19_3');
+
+        const p20 = $('#p20')
+        const g20_1 = $('#g20_1');
+        const g20_2 = $('#g20_2');
+        const g20_3 = $('#g20_3');
+        const r20 = $('#r20');
+        const c20_1 = $('#c20_1');
+        const c20_2 = $('#c20_2');
+        const c20_3 = $('#c20_3');
+
+        const p21 = $('#p21')
+        const g21_1 = $('#g21_1');
+        const g21_2 = $('#g21_2');
+        const g21_3 = $('#g21_3');
+        const r21 = $('#r21');
+        const c21_1 = $('#c21_1');
+        const c21_2 = $('#c21_2');
+        const c21_3 = $('#c21_3');
+
+        const p22 = $('#p22')
+        const g22_1 = $('#g22_1');
+        const g22_2 = $('#g22_2');
+        const g22_3 = $('#g22_3');
+        const r22 = $('#r22');
+        const c22_1 = $('#c22_1');
+        const c22_2 = $('#c22_2');
+        const c22_3 = $('#c22_3');
+
+        const p23 = $('#p23')
+        const g23_1 = $('#g23_1');
+        const g23_2 = $('#g23_2');
+        const g23_3 = $('#g23_3');
+        const r23 = $('#r23');
+        const c23_1 = $('#c23_1');
+        const c23_2 = $('#c23_2');
+        const c23_3 = $('#c23_3');
+
+        const retroBuena = $('#retroBuena');
+        const retroMala = $('#retroMala');
+        const btnReintentar = $('#btnReintentar');
+        const calificacionParcial = $('#calificacionParcial');
+
+        const comodines = $('.comodines');
+        comodines.css('cursor', 'pointer');
+
+        let aciertos = 0;
+        let contestadas = 0;
+
+        const respuesta = $('.respuesta');
+        respuesta.css({
+            'color': 'yellow' 
+        });
+
+        const seleccionables = $('.seleccionables');
+        seleccionables.css({
+            width: '150px',
+            height: '23px',
+            background: 'transparent',
+            cursor: 'pointer'
+        });
+
+        const areas = $('.areas');
+        areas.css('cursor', 'pointer');
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/P27_1.mp3'),
+            new Audio('../audios/bien.mp3'),
+            new Audio('../audios/mal.mp3'),
+            new Audio('../audios/P27_2.mp3'),
+            new Audio('../audios/P27_3.mp3'),
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], activarIniciar, 2);
+            animacionEntrada(titulo, 'izquierda-derecha', 1, 1);
+            animacionEntrada(imagen, 'izquierda-derecha', 1, 1);
+            animacionEntrada(texto, 'izquierda-derecha', 1, 1);
+        }
+
+        function activarIniciar(){
+            parpadear(btnIniciar);
+        }
+
+        btnIniciar.click(function(){
+            if(btnIniciar.css('cursor') == 'pointer'){
+                dejarParpadear(btnIniciar);
+                animacionSalida(titulo, 'default', 1);
+                animacionSalida(texto, 'default', 1);
+                animacionSalida(btnIniciar, 'default', 1);
+
+                entradaEvaluacion();
+            }
+        });
+
+        function entradaEvaluacion(){
+            animacionEntrada(fondoEvaluacion, 'default', 1, 1);
+            animacionEntrada(contComodin, 'default', 1, 1);
+            animacionEntrada(areas, 'default', 1, 1);
+            animacionEntrada(comodin1, 'default', 1, 1.5);
+            animacionEntrada(comodin2, 'default', 1, 2);
+            animacionEntrada(comodin3, 'default', 1, 2.5);
+            animacionEntrada(comodin4, 'default', 1, 3);
+        }
+
+        // Funciones de comodines-------------------------------------
+        comodin1.click(function(){
+            if(comodin1.css('cursor') == 'pointer'){
+                aciertos++;
+                contestadas++;
+                animacionEntrada(r6, 'default', 1);
+                area6.css('cursor', 'default');  
+                comodin1.css('cursor', 'default');  
+            }
+        });
+        
+        comodin2.click(function(){
+            if(comodin2.css('cursor') == 'pointer'){
+                aciertos++;
+                contestadas++;
+                animacionEntrada(r18, 'default', 1);
+                area18.css('cursor', 'default');
+                comodin2.css('cursor', 'default');  
+            }
+        });
+        
+        comodin3.click(function(){
+            if(comodin3.css('cursor') == 'pointer'){
+                aciertos++;
+                contestadas++;
+                animacionEntrada(r2, 'default', 1);
+                area2.css('cursor', 'default');
+                comodin3.css('cursor', 'default');  
+            }
+        });
+        
+        comodin4.click(function(){
+            if(comodin4.css('cursor') == 'pointer'){
+                aciertos++;
+                contestadas++;
+                animacionEntrada(r16, 'default', 1);
+                area16.css('cursor', 'default');
+                comodin4.css('cursor', 'default');  
+            }
+        });
+
+        // Funciones globo 1------------------------------------------ 
+        area1.click(function(){
+            if(area1.css('cursor') == 'pointer'){
+                animacionEntrada(p1, 'default', 1);               
+                animacionEntrada(g1_1, 'default', 1);               
+                animacionEntrada(g1_2, 'default', 1);               
+                animacionEntrada(g1_3, 'default', 1);
+                area1.css('cursor', 'default');               
+            }
+        });
+
+        g1_1.click(function(){
+            if(g1_1.css('cursor') == 'pointer'){
+                animacionEntrada(c1_1, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo1();
+                completarActividad();
+            }
+        });
+
+        g1_2.click(function(){
+            if(g1_2.css('cursor') == 'pointer'){
+                animacionEntrada(c1_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo1();
+                completarActividad();
+            }
+        });
+
+        g1_3.click(function(){
+            if(g1_3.css('cursor') == 'pointer'){
+                animacionEntrada(c1_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo1();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo1(){
+            animacionSalida(p1, 'default', 1);               
+            animacionSalida(g1_1, 'default', 1);               
+            animacionSalida(g1_2, 'default', 1);               
+            animacionSalida(g1_3, 'default', 1);
+            animacionSalida(c1_1, 'default', 1);               
+            animacionSalida(c1_2, 'default', 1);               
+            animacionSalida(c1_3, 'default', 1);
+            animacionEntrada(r1, 'default', 1);  
+        }
+
+        // Funciones globo 2------------------------------------------ 
+        area2.click(function(){
+            if(area2.css('cursor') == 'pointer'){
+                animacionEntrada(p2, 'default', 1);               
+                animacionEntrada(g2_1, 'default', 1);               
+                animacionEntrada(g2_2, 'default', 1);               
+                animacionEntrada(g2_3, 'default', 1);
+                area2.css('cursor', 'default');               
+            }
+        });
+
+        g2_1.click(function(){
+            if(g2_1.css('cursor') == 'pointer'){
+                animacionEntrada(c2_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo2();
+                completarActividad();
+            }
+        });
+
+        g2_2.click(function(){
+            if(g2_2.css('cursor') == 'pointer'){
+                animacionEntrada(c2_2, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo2();
+                completarActividad();
+            }
+        });
+
+        g2_3.click(function(){
+            if(g2_3.css('cursor') == 'pointer'){
+                animacionEntrada(c2_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo2();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo2(){
+            animacionSalida(p2, 'default', 1);               
+            animacionSalida(g2_1, 'default', 1);               
+            animacionSalida(g2_2, 'default', 1);               
+            animacionSalida(g2_3, 'default', 1);
+            animacionSalida(c2_1, 'default', 1);               
+            animacionSalida(c2_2, 'default', 1);               
+            animacionSalida(c2_3, 'default', 1);
+            animacionEntrada(r2, 'default', 1);  
+
+            comodin3.css('cursor', 'default');  
+        }
+
+        // Funciones globo 3------------------------------------------ 
+        area3.click(function(){
+            if(area3.css('cursor') == 'pointer'){
+                animacionEntrada(p3, 'default', 1);               
+                animacionEntrada(g3_1, 'default', 1);               
+                animacionEntrada(g3_2, 'default', 1);               
+                animacionEntrada(g3_3, 'default', 1);
+                area3.css('cursor', 'default');               
+            }
+        });
+
+        g3_1.click(function(){
+            if(g3_1.css('cursor') == 'pointer'){
+                animacionEntrada(c3_1, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo3();
+                completarActividad();
+            }
+        });
+
+        g3_2.click(function(){
+            if(g3_2.css('cursor') == 'pointer'){
+                animacionEntrada(c3_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo3();
+                completarActividad();
+            }
+        });
+
+        g3_3.click(function(){
+            if(g3_3.css('cursor') == 'pointer'){
+                animacionEntrada(c3_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo3();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo3(){
+            animacionSalida(p3, 'default', 1);               
+            animacionSalida(g3_1, 'default', 1);               
+            animacionSalida(g3_2, 'default', 1);               
+            animacionSalida(g3_3, 'default', 1);
+            animacionSalida(c3_1, 'default', 1);               
+            animacionSalida(c3_2, 'default', 1);               
+            animacionSalida(c3_3, 'default', 1);
+            animacionEntrada(r3, 'default', 1);  
+        }
+
+        // Funciones globo 4------------------------------------------ 
+        area4.click(function(){
+            if(area4.css('cursor') == 'pointer'){
+                animacionEntrada(p4, 'default', 1);               
+                animacionEntrada(g4_1, 'default', 1);               
+                animacionEntrada(g4_2, 'default', 1);               
+                animacionEntrada(g4_3, 'default', 1);
+                area4.css('cursor', 'default');               
+            }
+        });
+
+        g4_1.click(function(){
+            if(g4_1.css('cursor') == 'pointer'){
+                animacionEntrada(c4_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo4();
+                completarActividad();
+            }
+        });
+
+        g4_2.click(function(){
+            if(g4_2.css('cursor') == 'pointer'){
+                animacionEntrada(c4_2, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo4();
+                completarActividad();
+            }
+        });
+
+        g4_3.click(function(){
+            if(g4_3.css('cursor') == 'pointer'){
+                animacionEntrada(c4_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo4();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo4(){
+            animacionSalida(p4, 'default', 1);               
+            animacionSalida(g4_1, 'default', 1);               
+            animacionSalida(g4_2, 'default', 1);               
+            animacionSalida(g4_3, 'default', 1);
+            animacionSalida(c4_1, 'default', 1);               
+            animacionSalida(c4_2, 'default', 1);               
+            animacionSalida(c4_3, 'default', 1);
+            animacionEntrada(r4, 'default', 1);  
+        }
+
+        // Funciones globo 5------------------------------------------ 
+        area5.click(function(){
+            if(area5.css('cursor') == 'pointer'){
+                animacionEntrada(p5, 'default', 1);               
+                animacionEntrada(g5_1, 'default', 1);               
+                animacionEntrada(g5_2, 'default', 1);               
+                animacionEntrada(g5_3, 'default', 1);
+                area5.css('cursor', 'default');               
+            }
+        });
+
+        g5_1.click(function(){
+            if(g5_1.css('cursor') == 'pointer'){
+                animacionEntrada(c5_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo5();
+                completarActividad();
+            }
+        });
+
+        g5_2.click(function(){
+            if(g5_2.css('cursor') == 'pointer'){
+                animacionEntrada(c5_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo5();
+                completarActividad();
+            }
+        });
+
+        g5_3.click(function(){
+            if(g5_3.css('cursor') == 'pointer'){
+                animacionEntrada(c5_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo5();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo5(){
+            animacionSalida(p5, 'default', 1);               
+            animacionSalida(g5_1, 'default', 1);               
+            animacionSalida(g5_2, 'default', 1);               
+            animacionSalida(g5_3, 'default', 1);
+            animacionSalida(c5_1, 'default', 1);               
+            animacionSalida(c5_2, 'default', 1);               
+            animacionSalida(c5_3, 'default', 1);
+            animacionEntrada(r5, 'default', 1);  
+        }
+
+        // Funciones globo 6------------------------------------------ 
+        area6.click(function(){
+            if(area6.css('cursor') == 'pointer'){
+                animacionEntrada(p6, 'default', 1);               
+                animacionEntrada(g6_1, 'default', 1);               
+                animacionEntrada(g6_2, 'default', 1);               
+                animacionEntrada(g6_3, 'default', 1);
+                area6.css('cursor', 'default');               
+            }
+        });
+
+        g6_1.click(function(){
+            if(g6_1.css('cursor') == 'pointer'){
+                animacionEntrada(c6_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo6();
+                completarActividad();
+            }
+        });
+
+        g6_2.click(function(){
+            if(g6_2.css('cursor') == 'pointer'){
+                animacionEntrada(c6_2, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo6();
+                completarActividad();
+            }
+        });
+
+        g6_3.click(function(){
+            if(g6_3.css('cursor') == 'pointer'){
+                animacionEntrada(c6_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo6();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo6(){
+            animacionSalida(p6, 'default', 1);               
+            animacionSalida(g6_1, 'default', 1);               
+            animacionSalida(g6_2, 'default', 1);               
+            animacionSalida(g6_3, 'default', 1);
+            animacionSalida(c6_1, 'default', 1);               
+            animacionSalida(c6_2, 'default', 1);               
+            animacionSalida(c6_3, 'default', 1);
+            animacionEntrada(r6, 'default', 1);
+            
+            comodin1.css('cursor', 'default');  
+        }
+
+        // Funciones globo 7------------------------------------------ 
+        area7.click(function(){
+            if(area7.css('cursor') == 'pointer'){
+                animacionEntrada(p7, 'default', 1);               
+                animacionEntrada(g7_1, 'default', 1);               
+                animacionEntrada(g7_2, 'default', 1);               
+                animacionEntrada(g7_3, 'default', 1);
+                area7.css('cursor', 'default');               
+            }
+        });
+
+        g7_1.click(function(){
+            if(g7_1.css('cursor') == 'pointer'){
+                animacionEntrada(c7_1, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo7();
+                completarActividad();
+            }
+        });
+
+        g7_2.click(function(){
+            if(g7_2.css('cursor') == 'pointer'){
+                animacionEntrada(c7_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo7();
+                completarActividad();
+            }
+        });
+
+        g7_3.click(function(){
+            if(g7_3.css('cursor') == 'pointer'){
+                animacionEntrada(c7_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo7();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo7(){
+            animacionSalida(p7, 'default', 1);               
+            animacionSalida(g7_1, 'default', 1);               
+            animacionSalida(g7_2, 'default', 1);               
+            animacionSalida(g7_3, 'default', 1);
+            animacionSalida(c7_1, 'default', 1);               
+            animacionSalida(c7_2, 'default', 1);               
+            animacionSalida(c7_3, 'default', 1);
+            animacionEntrada(r7, 'default', 1);  
+        }
+
+        // Funciones globo 8------------------------------------------ 
+        area8.click(function(){
+            if(area8.css('cursor') == 'pointer'){
+                animacionEntrada(p8, 'default', 1);               
+                animacionEntrada(g8_1, 'default', 1);               
+                animacionEntrada(g8_2, 'default', 1);               
+                animacionEntrada(g8_3, 'default', 1);
+                area8.css('cursor', 'default');               
+            }
+        });
+
+        g8_1.click(function(){
+            if(g8_1.css('cursor') == 'pointer'){
+                animacionEntrada(c8_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo8();
+                completarActividad();
+            }
+        });
+
+        g8_2.click(function(){
+            if(g8_2.css('cursor') == 'pointer'){
+                animacionEntrada(c8_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo8();
+                completarActividad();
+            }
+        });
+
+        g8_3.click(function(){
+            if(g8_3.css('cursor') == 'pointer'){
+                animacionEntrada(c8_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo8();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo8(){
+            animacionSalida(p8, 'default', 1);               
+            animacionSalida(g8_1, 'default', 1);               
+            animacionSalida(g8_2, 'default', 1);               
+            animacionSalida(g8_3, 'default', 1);
+            animacionSalida(c8_1, 'default', 1);               
+            animacionSalida(c8_2, 'default', 1);               
+            animacionSalida(c8_3, 'default', 1);
+            animacionEntrada(r8, 'default', 1);  
+        }
+
+        // Funciones globo 9------------------------------------------ 
+        area9.click(function(){
+            if(area9.css('cursor') == 'pointer'){
+                animacionEntrada(p9, 'default', 1);               
+                animacionEntrada(g9_1, 'default', 1);               
+                animacionEntrada(g9_2, 'default', 1);               
+                animacionEntrada(g9_3, 'default', 1);
+                area9.css('cursor', 'default');               
+            }
+        });
+
+        g9_1.click(function(){
+            if(g9_1.css('cursor') == 'pointer'){
+                animacionEntrada(c9_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo9();
+                completarActividad();
+            }
+        });
+
+        g9_2.click(function(){
+            if(g9_2.css('cursor') == 'pointer'){
+                animacionEntrada(c9_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo9();
+                completarActividad();
+            }
+        });
+
+        g9_3.click(function(){
+            if(g9_3.css('cursor') == 'pointer'){
+                animacionEntrada(c9_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo9();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo9(){
+            animacionSalida(p9, 'default', 1);               
+            animacionSalida(g9_1, 'default', 1);               
+            animacionSalida(g9_2, 'default', 1);               
+            animacionSalida(g9_3, 'default', 1);
+            animacionSalida(c9_1, 'default', 1);               
+            animacionSalida(c9_2, 'default', 1);               
+            animacionSalida(c9_3, 'default', 1);
+            animacionEntrada(r9, 'default', 1);  
+        }
+
+        // Funciones globo 10------------------------------------------ 
+        area10.click(function(){
+            if(area10.css('cursor') == 'pointer'){
+                animacionEntrada(p10, 'default', 1);               
+                animacionEntrada(g10_1, 'default', 1);               
+                animacionEntrada(g10_2, 'default', 1);               
+                animacionEntrada(g10_3, 'default', 1);
+                area10.css('cursor', 'default');               
+            }
+        });
+
+        g10_1.click(function(){
+            if(g10_1.css('cursor') == 'pointer'){
+                animacionEntrada(c10_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo10();
+                completarActividad();
+            }
+        });
+
+        g10_2.click(function(){
+            if(g10_2.css('cursor') == 'pointer'){
+                animacionEntrada(c10_2, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo10();
+                completarActividad();
+            }
+        });
+
+        g10_3.click(function(){
+            if(g10_3.css('cursor') == 'pointer'){
+                animacionEntrada(c10_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo10();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo10(){
+            animacionSalida(p10, 'default', 1);               
+            animacionSalida(g10_1, 'default', 1);               
+            animacionSalida(g10_2, 'default', 1);               
+            animacionSalida(g10_3, 'default', 1);
+            animacionSalida(c10_1, 'default', 1);               
+            animacionSalida(c10_2, 'default', 1);               
+            animacionSalida(c10_3, 'default', 1);
+            animacionEntrada(r10, 'default', 1);  
+        }
+
+        // Funciones globo 11------------------------------------------ 
+        area11.click(function(){
+            if(area11.css('cursor') == 'pointer'){
+                animacionEntrada(p11, 'default', 1);               
+                animacionEntrada(g11_1, 'default', 1);               
+                animacionEntrada(g11_2, 'default', 1);               
+                animacionEntrada(g11_3, 'default', 1);
+                area11.css('cursor', 'default');               
+            }
+        });
+
+        g11_1.click(function(){
+            if(g11_1.css('cursor') == 'pointer'){
+                animacionEntrada(c11_1, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo11();
+                completarActividad();
+            }
+        });
+
+        g11_2.click(function(){
+            if(g11_2.css('cursor') == 'pointer'){
+                animacionEntrada(c11_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo11();
+                completarActividad();
+            }
+        });
+
+        g11_3.click(function(){
+            if(g11_3.css('cursor') == 'pointer'){
+                animacionEntrada(c11_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo11();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo11(){
+            animacionSalida(p11, 'default', 1);               
+            animacionSalida(g11_1, 'default', 1);               
+            animacionSalida(g11_2, 'default', 1);               
+            animacionSalida(g11_3, 'default', 1);
+            animacionSalida(c11_1, 'default', 1);               
+            animacionSalida(c11_2, 'default', 1);               
+            animacionSalida(c11_3, 'default', 1);
+            animacionEntrada(r11, 'default', 1);  
+        }
+
+        // Funciones globo 12------------------------------------------ 
+        area12.click(function(){
+            if(area12.css('cursor') == 'pointer'){
+                animacionEntrada(p12, 'default', 1);               
+                animacionEntrada(g12_1, 'default', 1);               
+                animacionEntrada(g12_2, 'default', 1);               
+                animacionEntrada(g12_3, 'default', 1);
+                area12.css('cursor', 'default');               
+            }
+        });
+
+        g12_1.click(function(){
+            if(g12_1.css('cursor') == 'pointer'){
+                animacionEntrada(c12_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo12();
+                completarActividad();
+            }
+        });
+
+        g12_2.click(function(){
+            if(g12_2.css('cursor') == 'pointer'){
+                animacionEntrada(c12_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo12();
+                completarActividad();
+            }
+        });
+
+        g12_3.click(function(){
+            if(g12_3.css('cursor') == 'pointer'){
+                animacionEntrada(c12_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo12();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo12(){
+            animacionSalida(p12, 'default', 1);               
+            animacionSalida(g12_1, 'default', 1);               
+            animacionSalida(g12_2, 'default', 1);               
+            animacionSalida(g12_3, 'default', 1);
+            animacionSalida(c12_1, 'default', 1);               
+            animacionSalida(c12_2, 'default', 1);               
+            animacionSalida(c12_3, 'default', 1);
+            animacionEntrada(r12, 'default', 1);  
+        }
+
+        // Funciones globo 13------------------------------------------ 
+        area13.click(function(){
+            if(area13.css('cursor') == 'pointer'){
+                animacionEntrada(p13, 'default', 1);               
+                animacionEntrada(g13_1, 'default', 1);               
+                animacionEntrada(g13_2, 'default', 1);               
+                animacionEntrada(g13_3, 'default', 1);
+                area13.css('cursor', 'default');               
+            }
+        });
+
+        g13_1.click(function(){
+            if(g13_1.css('cursor') == 'pointer'){
+                animacionEntrada(c13_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo13();
+                completarActividad();
+            }
+        });
+
+        g13_2.click(function(){
+            if(g13_2.css('cursor') == 'pointer'){
+                animacionEntrada(c13_2, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo13();
+                completarActividad();
+            }
+        });
+
+        g13_3.click(function(){
+            if(g13_3.css('cursor') == 'pointer'){
+                animacionEntrada(c13_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo13();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo13(){
+            animacionSalida(p13, 'default', 1);               
+            animacionSalida(g13_1, 'default', 1);               
+            animacionSalida(g13_2, 'default', 1);               
+            animacionSalida(g13_3, 'default', 1);
+            animacionSalida(c13_1, 'default', 1);               
+            animacionSalida(c13_2, 'default', 1);               
+            animacionSalida(c13_3, 'default', 1);
+            animacionEntrada(r13, 'default', 1);  
+        }
+
+        // Funciones globo 14------------------------------------------ 
+        area14.click(function(){
+            if(area14.css('cursor') == 'pointer'){
+                animacionEntrada(p14, 'default', 1);               
+                animacionEntrada(g14_1, 'default', 1);               
+                animacionEntrada(g14_2, 'default', 1);               
+                animacionEntrada(g14_3, 'default', 1);
+                area14.css('cursor', 'default');               
+            }
+        });
+
+        g14_1.click(function(){
+            if(g14_1.css('cursor') == 'pointer'){
+                animacionEntrada(c14_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo14();
+                completarActividad();
+            }
+        });
+
+        g14_2.click(function(){
+            if(g14_2.css('cursor') == 'pointer'){
+                animacionEntrada(c14_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo14();
+                completarActividad();
+            }
+        });
+
+        g14_3.click(function(){
+            if(g14_3.css('cursor') == 'pointer'){
+                animacionEntrada(c14_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo14();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo14(){
+            animacionSalida(p14, 'default', 1);               
+            animacionSalida(g14_1, 'default', 1);               
+            animacionSalida(g14_2, 'default', 1);               
+            animacionSalida(g14_3, 'default', 1);
+            animacionSalida(c14_1, 'default', 1);               
+            animacionSalida(c14_2, 'default', 1);               
+            animacionSalida(c14_3, 'default', 1);
+            animacionEntrada(r14, 'default', 1);  
+        }
+
+        // Funciones globo 15------------------------------------------ 
+        area15.click(function(){
+            if(area15.css('cursor') == 'pointer'){
+                animacionEntrada(p15, 'default', 1);               
+                animacionEntrada(g15_1, 'default', 1);               
+                animacionEntrada(g15_2, 'default', 1);               
+                animacionEntrada(g15_3, 'default', 1);
+                area15.css('cursor', 'default');               
+            }
+        });
+
+        g15_1.click(function(){
+            if(g15_1.css('cursor') == 'pointer'){
+                animacionEntrada(c15_1, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo15();
+                completarActividad();
+            }
+        });
+
+        g15_2.click(function(){
+            if(g15_2.css('cursor') == 'pointer'){
+                animacionEntrada(c15_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo15();
+                completarActividad();
+            }
+        });
+
+        g15_3.click(function(){
+            if(g15_3.css('cursor') == 'pointer'){
+                animacionEntrada(c15_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo15();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo15(){
+            animacionSalida(p15, 'default', 1);               
+            animacionSalida(g15_1, 'default', 1);               
+            animacionSalida(g15_2, 'default', 1);               
+            animacionSalida(g15_3, 'default', 1);
+            animacionSalida(c15_1, 'default', 1);               
+            animacionSalida(c15_2, 'default', 1);               
+            animacionSalida(c15_3, 'default', 1);
+            animacionEntrada(r15, 'default', 1);  
+        }
+
+        // Funciones globo 16------------------------------------------ 
+        area16.click(function(){
+            if(area16.css('cursor') == 'pointer'){
+                animacionEntrada(p16, 'default', 1);               
+                animacionEntrada(g16_1, 'default', 1);               
+                animacionEntrada(g16_2, 'default', 1);               
+                animacionEntrada(g16_3, 'default', 1);
+                area16.css('cursor', 'default');               
+            }
+        });
+
+        g16_1.click(function(){
+            if(g16_1.css('cursor') == 'pointer'){
+                animacionEntrada(c16_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo16();
+                completarActividad();
+            }
+        });
+
+        g16_2.click(function(){
+            if(g16_2.css('cursor') == 'pointer'){
+                animacionEntrada(c16_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo16();
+                completarActividad();
+            }
+        });
+
+        g16_3.click(function(){
+            if(g16_3.css('cursor') == 'pointer'){
+                animacionEntrada(c16_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo16();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo16(){
+            animacionSalida(p16, 'default', 1);               
+            animacionSalida(g16_1, 'default', 1);               
+            animacionSalida(g16_2, 'default', 1);               
+            animacionSalida(g16_3, 'default', 1);
+            animacionSalida(c16_1, 'default', 1);               
+            animacionSalida(c16_2, 'default', 1);               
+            animacionSalida(c16_3, 'default', 1);
+            animacionEntrada(r16, 'default', 1);  
+
+            comodin4.css('cursor', 'default');  
+        }
+
+        // Funciones globo 17------------------------------------------ 
+        area17.click(function(){
+            if(area17.css('cursor') == 'pointer'){
+                animacionEntrada(p17, 'default', 1);               
+                animacionEntrada(g17_1, 'default', 1);               
+                animacionEntrada(g17_2, 'default', 1);               
+                animacionEntrada(g17_3, 'default', 1);
+                area17.css('cursor', 'default');               
+            }
+        });
+
+        g17_1.click(function(){
+            if(g17_1.css('cursor') == 'pointer'){
+                animacionEntrada(c17_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo17();
+                completarActividad();
+            }
+        });
+
+        g17_2.click(function(){
+            if(g17_2.css('cursor') == 'pointer'){
+                animacionEntrada(c17_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo17();
+                completarActividad();
+            }
+        });
+
+        g17_3.click(function(){
+            if(g17_3.css('cursor') == 'pointer'){
+                animacionEntrada(c17_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo17();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo17(){
+            animacionSalida(p17, 'default', 1);               
+            animacionSalida(g17_1, 'default', 1);               
+            animacionSalida(g17_2, 'default', 1);               
+            animacionSalida(g17_3, 'default', 1);
+            animacionSalida(c17_1, 'default', 1);               
+            animacionSalida(c17_2, 'default', 1);               
+            animacionSalida(c17_3, 'default', 1);
+            animacionEntrada(r17, 'default', 1);  
+        }
+
+        // Funciones globo 18------------------------------------------ 
+        area18.click(function(){
+            if(area18.css('cursor') == 'pointer'){
+                animacionEntrada(p18, 'default', 1);               
+                animacionEntrada(g18_1, 'default', 1);               
+                animacionEntrada(g18_2, 'default', 1);               
+                animacionEntrada(g18_3, 'default', 1);
+                area18.css('cursor', 'default');               
+            }
+        });
+
+        g18_1.click(function(){
+            if(g18_1.css('cursor') == 'pointer'){
+                animacionEntrada(c18_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo18();
+                completarActividad();
+            }
+        });
+
+        g18_2.click(function(){
+            if(g18_2.css('cursor') == 'pointer'){
+                animacionEntrada(c18_2, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo18();
+                completarActividad();
+            }
+        });
+
+        g18_3.click(function(){
+            if(g18_3.css('cursor') == 'pointer'){
+                animacionEntrada(c18_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo18();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo18(){
+            animacionSalida(p18, 'default', 1);               
+            animacionSalida(g18_1, 'default', 1);               
+            animacionSalida(g18_2, 'default', 1);               
+            animacionSalida(g18_3, 'default', 1);
+            animacionSalida(c18_1, 'default', 1);               
+            animacionSalida(c18_2, 'default', 1);               
+            animacionSalida(c18_3, 'default', 1);
+            animacionEntrada(r18, 'default', 1);
+            comodin2.css('cursor', 'default');    
+        }
+
+        // Funciones globo 19------------------------------------------ 
+        area19.click(function(){
+            if(area19.css('cursor') == 'pointer'){
+                animacionEntrada(p19, 'default', 1);               
+                animacionEntrada(g19_1, 'default', 1);               
+                animacionEntrada(g19_2, 'default', 1);               
+                animacionEntrada(g19_3, 'default', 1);
+                area19.css('cursor', 'default');               
+            }
+        });
+
+        g19_1.click(function(){
+            if(g19_1.css('cursor') == 'pointer'){
+                animacionEntrada(c19_1, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo19();
+                completarActividad();
+            }
+        });
+
+        g19_2.click(function(){
+            if(g19_2.css('cursor') == 'pointer'){
+                animacionEntrada(c19_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo19();
+                completarActividad();
+            }
+        });
+
+        g19_3.click(function(){
+            if(g19_3.css('cursor') == 'pointer'){
+                animacionEntrada(c19_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo19();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo19(){
+            animacionSalida(p19, 'default', 1);               
+            animacionSalida(g19_1, 'default', 1);               
+            animacionSalida(g19_2, 'default', 1);               
+            animacionSalida(g19_3, 'default', 1);
+            animacionSalida(c19_1, 'default', 1);               
+            animacionSalida(c19_2, 'default', 1);               
+            animacionSalida(c19_3, 'default', 1);
+            animacionEntrada(r19, 'default', 1);  
+        }
+
+        // Funciones globo 20------------------------------------------ 
+        area20.click(function(){
+            if(area20.css('cursor') == 'pointer'){
+                animacionEntrada(p20, 'default', 1);               
+                animacionEntrada(g20_1, 'default', 1);               
+                animacionEntrada(g20_2, 'default', 1);               
+                animacionEntrada(g20_3, 'default', 1);
+                area20.css('cursor', 'default');               
+            }
+        });
+
+        g20_1.click(function(){
+            if(g20_1.css('cursor') == 'pointer'){
+                animacionEntrada(c20_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo20();
+                completarActividad();
+            }
+        });
+
+        g20_2.click(function(){
+            if(g20_2.css('cursor') == 'pointer'){
+                animacionEntrada(c20_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo20();
+                completarActividad();
+            }
+        });
+
+        g20_3.click(function(){
+            if(g20_3.css('cursor') == 'pointer'){
+                animacionEntrada(c20_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo20();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo20(){
+            animacionSalida(p20, 'default', 1);               
+            animacionSalida(g20_1, 'default', 1);               
+            animacionSalida(g20_2, 'default', 1);               
+            animacionSalida(g20_3, 'default', 1);
+            animacionSalida(c20_1, 'default', 1);               
+            animacionSalida(c20_2, 'default', 1);               
+            animacionSalida(c20_3, 'default', 1);
+            animacionEntrada(r20, 'default', 1);  
+        }
+
+        // Funciones globo 21------------------------------------------ 
+        area21.click(function(){
+            if(area21.css('cursor') == 'pointer'){
+                animacionEntrada(p21, 'default', 1);               
+                animacionEntrada(g21_1, 'default', 1);               
+                animacionEntrada(g21_2, 'default', 1);               
+                animacionEntrada(g21_3, 'default', 1);
+                area21.css('cursor', 'default');               
+            }
+        });
+
+        g21_1.click(function(){
+            if(g21_1.css('cursor') == 'pointer'){
+                animacionEntrada(c21_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo21();
+                completarActividad();
+            }
+        });
+
+        g21_2.click(function(){
+            if(g21_2.css('cursor') == 'pointer'){
+                animacionEntrada(c21_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo21();
+                completarActividad();
+            }
+        });
+
+        g21_3.click(function(){
+            if(g21_3.css('cursor') == 'pointer'){
+                animacionEntrada(c21_3, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo21();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo21(){
+            animacionSalida(p21, 'default', 1);               
+            animacionSalida(g21_1, 'default', 1);               
+            animacionSalida(g21_2, 'default', 1);               
+            animacionSalida(g21_3, 'default', 1);
+            animacionSalida(c21_1, 'default', 1);               
+            animacionSalida(c21_2, 'default', 1);               
+            animacionSalida(c21_3, 'default', 1);
+            animacionEntrada(r21, 'default', 1);  
+        }
+
+        // Funciones globo 22------------------------------------------ 
+        area22.click(function(){
+            if(area22.css('cursor') == 'pointer'){
+                animacionEntrada(p22, 'default', 1);               
+                animacionEntrada(g22_1, 'default', 1);               
+                animacionEntrada(g22_2, 'default', 1);               
+                animacionEntrada(g22_3, 'default', 1);
+                area22.css('cursor', 'default');               
+            }
+        });
+
+        g22_1.click(function(){
+            if(g22_1.css('cursor') == 'pointer'){
+                animacionEntrada(c22_1, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo22();
+                completarActividad();
+            }
+        });
+
+        g22_2.click(function(){
+            if(g22_2.css('cursor') == 'pointer'){
+                animacionEntrada(c22_2, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo22();
+                completarActividad();
+            }
+        });
+
+        g22_3.click(function(){
+            if(g22_3.css('cursor') == 'pointer'){
+                animacionEntrada(c22_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo22();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo22(){
+            animacionSalida(p22, 'default', 1);               
+            animacionSalida(g22_1, 'default', 1);               
+            animacionSalida(g22_2, 'default', 1);               
+            animacionSalida(g22_3, 'default', 1);
+            animacionSalida(c22_1, 'default', 1);               
+            animacionSalida(c22_2, 'default', 1);               
+            animacionSalida(c22_3, 'default', 1);
+            animacionEntrada(r22, 'default', 1);  
+        }
+
+        // Funciones globo 23------------------------------------------ 
+        area23.click(function(){
+            if(area23.css('cursor') == 'pointer'){
+                animacionEntrada(p23, 'default', 1);               
+                animacionEntrada(g23_1, 'default', 1);               
+                animacionEntrada(g23_2, 'default', 1);               
+                animacionEntrada(g23_3, 'default', 1);
+                area23.css('cursor', 'default');               
+            }
+        });
+
+        g23_1.click(function(){
+            if(g23_1.css('cursor') == 'pointer'){
+                animacionEntrada(c23_1, 'default', 1);
+                audio[1].play();
+                aciertos++;
+                contestadas++;
+                salidaGlobo23();
+                completarActividad();
+            }
+        });
+
+        g23_2.click(function(){
+            if(g23_2.css('cursor') == 'pointer'){
+                animacionEntrada(c23_2, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo23();
+                completarActividad();
+            }
+        });
+
+        g23_3.click(function(){
+            if(g23_3.css('cursor') == 'pointer'){
+                animacionEntrada(c23_3, 'default', 1);
+                audio[2].play();
+                contestadas++;
+                salidaGlobo23();
+                completarActividad();
+            }
+        });
+
+        function salidaGlobo23(){
+            animacionSalida(p23, 'default', 1);               
+            animacionSalida(g23_1, 'default', 1);               
+            animacionSalida(g23_2, 'default', 1);               
+            animacionSalida(g23_3, 'default', 1);
+            animacionSalida(c23_1, 'default', 1);               
+            animacionSalida(c23_2, 'default', 1);               
+            animacionSalida(c23_3, 'default', 1);
+            animacionEntrada(r23, 'default', 1);  
+        }
+
+        // Verificar las respuestas contestadas------------------------
+        function completarActividad(){
+            if(contestadas == 23){
+                salidaActividad();
+            }
+        }
+
+        function salidaActividad(){
+            animacionSalida(respuesta, 'default', 1);
+            animacionSalida(areas, 'default', 1);
+            animacionSalida(comodines, 'default', 1);
+            animacionSalida(fondoEvaluacion, 'default', 1);
+
+            retroalimentacion();
+        }
+
+        // Funciones de la evaluación----------------------------------
+
+        function retroalimentacion(){
+
+            const promedioParcial = ((aciertos * 100) / 23).toFixed();
+
+            //Obtiene 3 puntos
+            if(aciertos > 16){
+                aplicacion.guardarPuntos(3);
+                retroB(promedioParcial);
+            }
+            //Obtiene 2 puntos
+            else if(aciertos>8){
+                aplicacion.guardarPuntos(2);
+                retroB(promedioParcial);
+            }
+            //Obtiene 1 punto
+            else{
+                retroM();
+            }
+        }
+
+        function retroB(calificacion){
+            calificacionParcial.html(calificacion);
+
+            calificacionParcial.css({
+                'color': 'white',
+                'top': '256px', 
+                'left': '500px',
+                'fontSize': '20px'
+            });
+
+            aplicacion.reproducirAudio(audio[3], finalPantalla, 2);
+            animacionEntrada(retroBuena, 'default', 1, 1);
+            animacionEntrada(calificacionParcial, 'default', 1, 1);
+        }
+
+        function retroM(){
+            aplicacion.reproducirAudio(audio[4], reintentar, 2);
+            animacionEntrada(retroMala, 'default', 1, 1);
+        }
+
+        function reintentar(){
+            parpadear(btnReintentar);
+        }
+
+        btnReintentar.click(function(){
+            aplicacion.recargarPagina();
+        });
+
+        function finalPantalla(){
+            aplicacion.terminaPantalla();
+        }
+
+        
+
+    </script>
+</body>
+</html>

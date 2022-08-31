@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 15</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+
+    <img class="elementos" id="titulo" src="../img/pagina15/titulo.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="imagen" src="../img/pagina15/imagen.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="texto" src="../img/pagina15/texto.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="btn1" src="../img/pagina15/btn1.png" data-posX="290" data-posY="180"/>
+    <img class="elementos" id="btn2" src="../img/pagina15/btn2.png" data-posX="650" data-posY="180"/>
+    <img class="elementos" id="pop1" src="../img/pagina15/pop1.png" data-posX="290" data-posY="180"/>
+    <img class="elementos" id="pop2" src="../img/pagina15/pop2.png" data-posX="650" data-posY="180"/>
+
+    
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+        const titulo = $('#titulo');
+        const imagen = $('#imagen');
+        const texto = $('#texto');
+        const btn1 = $('#btn1');
+        const btn2 = $('#btn2');
+        const pop1 = $('#pop1');
+        const pop2 = $('#pop2');
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/P15_1.mp3'),
+            new Audio('../audios/P15_2.mp3'),
+            new Audio('../audios/P15_3.mp3')
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], verInfo1, 2);
+            animacionEntrada(titulo, 'izquierda-derecha', 1, 1);
+            animacionEntrada(imagen, 'izquierda-derecha', 1, 1);
+            animacionEntrada(texto, 'izquierda-derecha', 1, 1);
+            animacionEntrada(btn1, 'default', 1, 2);
+            animacionEntrada(btn2, 'default', 1, 2);
+        }
+
+        function verInfo1(){
+            parpadear(btn1);
+        }
+
+        function verInfo2(){
+            parpadear(btn2);
+        }
+
+        btn1.click(function(){
+            if(btn1.css('cursor') == 'pointer'){
+                aplicacion.reproducirAudio(audio[1], verInfo2, 2);
+                animacionEntrada(pop1, 'default', 1);
+                dejarParpadear(btn1);
+            }
+        });
+
+        btn2.click(function(){
+            if(btn2.css('cursor') == 'pointer'){
+                aplicacion.reproducirAudio(audio[2], activarBoton, 2);
+                animacionEntrada(pop2, 'default', 1);
+                dejarParpadear(btn2);
+            }
+        });
+
+        function activarBoton(){
+            aplicacion.terminaPantalla();
+        }
+
+    </script>
+</body>
+</html>
