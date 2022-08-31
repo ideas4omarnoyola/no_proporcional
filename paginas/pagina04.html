@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 04</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Librerias -->
+    <script src="../js/librerias/jquery.min.js"></script>
+    <script src="../js/librerias/gsap.min.js"></script>
+
+    <!-- Script de animaciones -->
+    <script src="../js/animaciones.js"></script>
+    <!-- Scripts posicionar elementos -->
+    <script src="../js/redimensionarElementos.js"></script>
+    <script src="../js/posicionar.js"></script>
+
+</head>
+<body class="pagina">
+    <img class="elementos" id="fondo" src="../img/pagina04/fondo.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="instrucciones" src="../img/pagina04/instrucciones.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="btn1" src="../img/pagina04/btn1.png" data-posX="350" data-posY="260"/>
+    <img class="elementos" id="btn2" src="../img/pagina04/btn2.png" data-posX="650" data-posY="260"/>
+    <img class="elementos" id="info01" src="../img/pagina04/info01.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="info02" src="../img/pagina04/info02.png" data-posX="0" data-posY="0"/>
+    <img class="elementos" id="btnCerrar01" src="../img/pagina04/btnCerrar01.png" data-posX="790" data-posY="170"/>
+    <img class="elementos" id="btnCerrar02" src="../img/pagina04/btnCerrar02.png" data-posX="790" data-posY="170"/>
+
+
+    
+    <!-- Script de la página -->
+    <script>
+
+        // Variable----------------------------------------------------
+        let aplicacion = parent;
+
+        const fondo = $('#fondo');
+        const instrucciones = $('#instrucciones');
+        const btn1 = $('#btn1');
+        const btn2 = $('#btn2');
+        const info01 = $('#info01');
+        const info02 = $('#info02');
+        const btnCerrar01 = $('#btnCerrar01');
+        const btnCerrar02 = $('#btnCerrar02');
+
+        let abrirBtn01 = false;
+        let abrirBtn02 = false;
+
+        // Audios------------------------------------------------------
+        const audio = [
+            new Audio('../audios/P04_1.mp3'),
+            new Audio('../audios/P04_2.mp3'),
+            new Audio('../audios/P04_3.mp3'),
+            new Audio('../audios/P04_4.mp3'),
+        ]
+
+        // Al cargarse la página
+        $(window).on("load", function(){
+            redimensionarElementos();
+            aplicacion.cargando(iniciarContenido);
+        });
+
+        function iniciarContenido(){
+            aplicacion.reproducirAudio(audio[0], terminaAudio, 1);
+            animacionEntrada(fondo, 'default', 1, 1);
+            animacionEntrada(instrucciones, 'default', 1, 4);
+            animacionEntrada(btn1, 'default', 1, 5);
+            animacionEntrada(btn2, 'default', 1, 5);
+        }
+        
+        function terminaAudio(){
+            parpadear(btn1);
+        }
+
+        btn1.click(function () {
+            if (btn1.css('cursor') == 'pointer') {
+                TweenMax.killTweensOf(btn1);
+    
+                dejarParpadear(btn1);
+                aplicacion.reproducirAudio(audio[1], terminaAudioBtn01, 1);
+                animacionEntrada(info01, 'default', 1, 1);
+            }
+        });
+
+        function terminaAudioBtn01() {
+            btn1.css({
+                'opacity': '1',
+                'cursor' : 'pointer'
+            });
+            parpadear(btnCerrar01);
+        }
+
+        btnCerrar01.click(function(){
+            if(btnCerrar01.css('cursor') == 'pointer'){
+                TweenMax.killTweensOf(btnCerrar01);
+                btnCerrar01.css({
+                    'opacity': '1',
+                });
+
+                dejarParpadear(btnCerrar01);
+                animacionSalida(info01, 'default', 1, .5);
+                animacionSalida(btnCerrar01, 'default', 1, .5);
+            }
+
+            if(!abrirBtn01){
+                abrirBtn01 = true;
+                setTimeout(()=>{
+                    parpadear(btn2);
+                }, 2000);
+            }
+                
+        });
+
+        btn2.click(function () {
+            if (btn2.css('cursor') == 'pointer') {
+                TweenMax.killTweensOf(btn2);
+                btn2.css({
+                    'opacity': '1',
+                });
+                dejarParpadear(btn2);
+                aplicacion.reproducirAudio(audio[2], terminaAudioBtn02, 1);
+                animacionEntrada(info02, 'default', 1, 1);
+            }
+        });
+
+        function terminaAudioBtn02() {
+            aplicacion.reproducirAudio(audio[3], terminaAudioBtn02_2, 1);
+        }
+
+        function terminaAudioBtn02_2() {
+            btn2.css({
+                'opacity': '1',
+                'cursor' : 'pointer'
+            });
+            parpadear(btnCerrar02);
+        }
+
+        btnCerrar02.click(function(){
+            if(btnCerrar02.css('cursor') == 'pointer'){
+                TweenMax.killTweensOf(btnCerrar02);
+                btnCerrar02.css({
+                    'opacity': '1',
+                });
+                    
+                dejarParpadear(btnCerrar02);
+                animacionSalida(info02, 'default', 1, .5);
+                animacionSalida(btnCerrar02, 'default', 1, .5);
+
+            }
+
+            if(!abrirBtn02){
+                abrirBtn02 = true;
+            }
+
+            terminaPagina();
+
+        });
+
+        function terminaPagina(){
+            aplicacion.terminaPantalla();
+        }
+
+    </script>
+</body>
+</html>
