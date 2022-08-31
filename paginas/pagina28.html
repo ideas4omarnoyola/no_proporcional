@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 01</title>
+    <title>Página 28</title>
 
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/estilos.css">
@@ -21,52 +21,35 @@
 
 </head>
 <body class="pagina">
-
-    <img class="elementos" id="titulo" src="../img/pagina01/titulo.png" data-posX="0" data-posY="0"/>
-    <img class="elementos" id="imagen" src="../img/pagina01/imagen.png" data-posX="0" data-posY="0"/>
-    <img class="elementos" id="texto" src="../img/pagina01/texto.png" data-posX="0" data-posY="0"/>
-    <img class="elementos" id="boton" src="../img/pagina01/boton.png" data-posX="400" data-posY="380"/>
-
+    <img class="elementos" id="fondo" src="../img/pagina28/fondo.png" data-posX="0" data-posY="0"/>
     
     <!-- Script de la página -->
     <script>
 
         // Variable----------------------------------------------------
         let aplicacion = parent;
-        const titulo = $('#titulo');
-        const imagen = $('#imagen');
-        const texto = $('#texto');
-        const boton = $('#boton');
+
+        const fondo = $('#fondo');
 
         // Audios------------------------------------------------------
         const audio = [
-            new Audio('../audios/P01_1.mp3')
+            new Audio('../audios/P28_1.mp3')
         ]
 
         // Al cargarse la página
         $(window).on("load", function(){
             redimensionarElementos();
-            aplicacion.desactivarBotonAdelante();
-            aplicacion.desactivarBotonAtras();
             aplicacion.cargando(iniciarContenido);
         });
 
         function iniciarContenido(){
-            aplicacion.reproducirAudio(audio[0], activarBoton, 1);
-            animacionEntrada(texto, 'default', 1, 1);
-            animacionEntrada(titulo, 'default', 1, 1);
-            animacionEntrada(imagen, 'default', 1, 1);
+            aplicacion.reproducirAudio(audio[0], terminaPagina, 1);
+            animacionEntrada(fondo, 'default', 1, 1);
         }
-
-        function activarBoton(){
-            parpadear(boton);
+        
+        function terminaPagina(){
+            aplicacion.terminaPantalla();
         }
-
-        boton.click(function(){
-            if(boton.css('cursor') == 'pointer'){
-                aplicacion.siguientePagina();
-            }
-        });
 
     </script>
 </body>
